@@ -38,10 +38,10 @@ ga('send', 'pageview');
 	<tbody>
 		<tr>
 			<td width="670">
-				<div id="toptitle">					
+				<div id="toptitle">
 					<h1>Haipeng Zhou (<a href="https://www.youtube.com/watch?v=Yxep-gS-Btg">Rydeen</a>, 周海鹏)</h1><h1>
 					</h1></div>
-				
+
 				<p>
 					VIP Lab, <br>
 					No.1, Duxue Road,<br>
@@ -50,9 +50,9 @@ ga('send', 'pageview');
 					Email: haipengzhou856@gmail.com (prefer)<br>
 					or  &nbsp  &nbsp &nbsp  &nbsp &nbsp<del>lesslie@stu.xjtu.edu.cn(deprecated)</del> <br>
 
-					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp hzhou321@connect.hkust-gz.edu.cn(official) 
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp hzhou321@connect.hkust-gz.edu.cn(official)
 				</p>
-				<p> <!--<a href=""><img src="./pic/google_scholar.png" height="30px" style="margin-bottom:-3px"></a>-->
+				<p> <a href="https://scholar.google.com/citations?user=TWKPrm0AAAAJ&hl=en"><img src="./pic/google_scholar.png" height="30px" style="margin-bottom:-3px"></a>
 					<a href="https://github.com/haipengzhou856"><img src="./pic/github_s.jpg" height="30px" style="margin-bottom:-3px"></a>
 					<!--<a href=""><img src="./pic/orcid.jpeg" height="30px" style="margin-bottom:-3px"></a>-->
 					<!--<a href=""><img src="./pic/rg.png" height="30px" style="margin-bottom:-3px"></a>-->
@@ -60,16 +60,44 @@ ga('send', 'pageview');
 				</p>
 			</td>
 			<td>
-				<img src="./pic/zhp_pic.png" border="0" width="300"><br>
-			</td>
-		</tr><tr>
-	</tr></tbody>
+				<head>
+<head>
+  <title>Next Image on Click</title>
+  <style>
+    /* 定义图像的样式 */
+    .image-container img {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="./pic/zhp_pic.png" alt="图片1" id="image">
+  </div>
+
+  <script>
+    var images = ["./pic/zhp_pic.png","./pic/zhp3.jpg","./pic/zhp1.jpg","./pic/zhp2.jpg","./pic/rickroll.png"]
+    var currentIndex = 0;
+    var imageElement = document.getElementById('image');
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      imageElement.src = images[currentIndex];
+    }
+
+    imageElement.addEventListener('click', nextImage);
+  </script>
+			<center>click the photo to see more casual boy😎</center>
+</body>
 </table>
 
 <!--<h2>Biography [<a href="./CV-JinYueming.pdf">CV</a>]</h2>-->
 <h2>Biography </h2>
 <p>
-	I'm a first-year PhD student from <a href="https://www.hkust-gz.edu.cn/">HKUST-GZ</a>, supervised by 
+	<a href="https://ciallo.cc/">Ciallo!</a>
+    <img src="./pic/steamhappy.png" alt="inser_img" width="25">
+ I'm a first-year PhD student from <a href="https://www.hkust-gz.edu.cn/">HKUST-GZ</a>, supervised by
 	<a href="https://sites.google.com/site/indexlzhu/home">prof. Zhu Lei</a>. Before that, I obtain the B.E
 	degree of Computer Science from <a href="http://www.xjtu.edu.cn/">Xi'an JiaoTong University</a> supervised
 	by <a href="https://gr.xjtu.edu.cn/en/web/xueyao">prof. Xue Yao</a> in the <a href="http://www.smiles-xjtu.com/">Smiles Lab</a>.
@@ -242,7 +270,7 @@ ga('send', 'pageview');
 	<tbody>
 		<li> I do love <a href="https://www.youtube.com/watch?v=Yxep-gS-Btg">Rydeen</a>
 			and take it as my nickname, which is of passion, energy and combativity 
-			to help me struggle with the tough time. 
+			to help me struggle with the tough time. Masterpiece of sakamoto, R.I.P.
 
     <li> <a href="caprice.html" style="text-decoration: underline;">Some Caprices.</a>
 	</tbody>
@@ -254,7 +282,7 @@ ga('send', 'pageview');
 	<p><center>
 		
         Template from <a href="https://jonbarron.info/">Jon Barron</a> <br>
-		Last updated: 12/10, 2023
+		Last updated: 12/19, 2023
      
       </center></p>
 
