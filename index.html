@@ -56,10 +56,9 @@ ga('send', 'pageview');
 				</p>
 				<p> <a href="https://scholar.google.com/citations?user=TWKPrm0AAAAJ&hl=en"><img src="./pic/google_scholar.png" height="30px" style="margin-bottom:-3px"></a>
 					<a href="https://github.com/haipengzhou856"><img src="./pic/github_s.jpg" height="30px" style="margin-bottom:-3px"></a>
-
+<a href="./pic/wechat_rydeen.png"><img src="./pic/wechat.png" height="30px" style="margin-bottom:-3px"></a>
 					<!--<a href=""><img src="./pic/orcid.jpeg" height="30px" style="margin-bottom:-3px"></a>-->
 					<!--<a href=""><img src="./pic/rg.png" height="30px" style="margin-bottom:-3px"></a>-->
-
 				</p>
 			</td>
 			<td>
@@ -67,30 +66,62 @@ ga('send', 'pageview');
 <head>
   <title>Next Image on Click</title>
   <style>
-    .image-container img {
+    .image-container {
+      position: relative;
       width: 300px;
       height: 300px;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+    }
+    .button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      padding: 8px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      font-size: 16px;
+      color: #333;
+    }
+    #prevButton {
+      left: 10px;
+    }
+    #nextButton {
+      right: 10px;
     }
   </style>
 </head>
 <body>
   <div class="image-container">
+    <button class="button" id="prevButton">&#9664;</button>
     <img src="./pic/zhp_3.png" alt="图片1" id="image">
+    <button class="button" id="nextButton">&#9654;</button>
   </div>
 
   <script>
-    var images = ["./pic/zhp_3.png","./pic/zhp_pic.png","./pic/zhp_newyear1.jpg","./pic/zhp3.jpg","./pic/zhp1.jpg","./pic/zhp_2.jpg","./pic/rickroll.png"]
+    var images = ["./pic/zhp_3.png","./pic/zhp_pic.png","./pic/zhp_newyear1.jpg","./pic/zhp3.jpg","./pic/zhp1.jpg","./pic/zhp_2.jpg","./pic/rickroll.png"];
     var currentIndex = 0;
     var imageElement = document.getElementById('image');
+    var prevButton = document.getElementById('prevButton');
+    var nextButton = document.getElementById('nextButton');
 
     function nextImage() {
       currentIndex = (currentIndex + 1) % images.length;
       imageElement.src = images[currentIndex];
     }
 
-    imageElement.addEventListener('click', nextImage);
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      imageElement.src = images[currentIndex];
+    }
+
+    nextButton.addEventListener('click', nextImage);
+    prevButton.addEventListener('click', prevImage);
   </script>
-			<center>click the photo to check more Rydeens :)</center>
+  <center></center>
 </body>
 </table>
 
@@ -107,8 +138,11 @@ ga('send', 'pageview');
 	</p>
 	</p>
 	My research areas are various, from normal scenario and medical images, downstream on the segmentation and detection.
-	</p>After tasting hundreds coffes, I will transfer into generalization study and weakly supervised learning.
+	</p>After tasting hundreds coffes, I will focus on generalization study and open-set exploration.
 	</p>
+<p style="color: red;">I’m actively seeking for internship,
+targeting OOD, Diffusion, LVM. Contact me if you have any position.<img src="./pic/salute.png" height="25px" style="margin-bottom:-3px"></p>
+
 
 <h2>News</h2>
 	<div style="height: 200px; overflow-y: scroll;">
