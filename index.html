@@ -96,31 +96,10 @@ ga('send', 'pageview');
 </head>
 <body>
   <div class="image-container">
-    <button class="button" id="prevButton">&#9664;</button>
-    <img src="./pic/zhp_3.png" alt="图片1" id="image">
-    <button class="button" id="nextButton">&#9654;</button>
+    <img src="./pic/zhp1.jpg" alt="图片1" id="image">
   </div>
 
-  <script>
-    var images = ["./pic/zhp_3.png","./pic/zhp_pic.png","./pic/zhp_newyear1.jpg","./pic/zhp3.jpg","./pic/zhp1.jpg","./pic/zhp_2.jpg","./pic/rickroll.png"];
-    var currentIndex = 0;
-    var imageElement = document.getElementById('image');
-    var prevButton = document.getElementById('prevButton');
-    var nextButton = document.getElementById('nextButton');
 
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      imageElement.src = images[currentIndex];
-    }
-
-    function prevImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      imageElement.src = images[currentIndex];
-    }
-
-    nextButton.addEventListener('click', nextImage);
-    prevButton.addEventListener('click', prevImage);
-  </script>
   <center></center>
 </body>
 </table>
@@ -138,10 +117,10 @@ ga('send', 'pageview');
 	</p>
 	</p>
 	My research areas are various, from normal scenario and medical images,
-	focusing on the LVM and Diffusion.
+	especially for matting and MLLM.
 	</p>
 <p style="color: red;">After great intern time in Huawei@Shanghai, now I'm in OPPO@Shenzhen for research internship focusing on controllable image computing, including high-accuracy matting and generation.
-	I'll be in the job market after mid@2026 (internship), welcome for contacting me. <img src="./pic/salute.png" height="25px" style="margin-bottom:-3px"></p>
+	I'll be in the job market after ECCV (internship), welcome for contacting me. <img src="./pic/salute.png" height="25px" style="margin-bottom:-3px"></p>
 
 
 <h2>News</h2>
@@ -156,6 +135,9 @@ ga('send', 'pageview');
         Check the <a href="https://xjtu.app/t/topic/7760/9">details</a>.
     </li>
 </tbody>
+	<tbody>
+	<li>[2026/01]: Big congradulations to Sicheng! Our LLM-driven pathological survival prediction work is accepted by <b>TMI</b>.
+	</tbody>
 	<tbody>
 	<li>[2025/11]: One work is accepted by <b>AAAI 2026</b>. Great internship experience @Huawei, thx all the guys there!
 	</tbody>
@@ -380,10 +362,23 @@ Autoregressive Traction for Survival Prediction</b><br>
 
 
 
-<h2>Co-author Works</h2>
+<h2>Co-author Works (*: Project Lead)</h2>
 <table id="Publications">
 
   <tbody>
+        <tr>
+      <td>
+        <div class="publication-title">
+          <b>- LCM-Net: LLM-driven Cross-Modality MoE Feature Fusion Network for Cancer Survival Analysis</b><br>
+			Sicheng Yang, <b>Haipeng Zhou*</b>, Yijun Yang, Weiming Wang, Shifu Chen, Guang Yang, Huazhu Fu, and Lei Zhu<br>
+          State: <b>TMI</b><br>
+          <a href="www.google.com"><img src="./pic/arxiv_logo.png" height="35px">(TODO)</a>
+        </div>
+      </td>
+    </tr>
+
+
+
       <tr>
       <td>
         <div class="publication-title">
@@ -423,16 +418,20 @@ Autoregressive Traction for Survival Prediction</b><br>
 <h2>Services</h2>
 <table style="border-spacing:2px">
 	<tbody>
+		<li><b>Teaching Assistant</b><br>
+2026-Spring: Advanced Learning Techniques for Medical Robotics Systems
+	</li>
+
 	<li><b>Reviewer</b><br>
 	Journals: JBHI,TMI <br>
 	Conferences:ICLR, MM, AAAI
 	</li>
 	<li><b>Mentorship</b>:<br>
-	I do feel lucky to serve as mentor to work with talented guys&RAs, feel free to reach out to me especially if you are XJTUer :)
+	I do feel lucky to mentor talented guys&RAs. I can provide ideas, just feel free to reach out to me especially if you are XJTUer :)
 	<br><br>
-	&Delta; <a href="https://script-yang.github.io/" ><b>Sicheng Yang</b> </a> (B.E.@XJTU -> Mphil@HKUST-GZ) : Medical MultiModal Leanrning (Pathology + Gene)
+	&Delta; Sicheng Yang </a> (B.E.@XJTU -> Mphil@HKUST-GZ) : Medical MultiModal Leanrning (Pathology + Gene)
 		<br>
-		&nbsp&nbsp&nbsp&nbsp--Production: TMI (major revision)
+		&nbsp&nbsp&nbsp&nbsp--Production: TMI (Accepted)
 		<br><br>
 	&Delta;	<b>Sihan Yang</b> (B.E.@XJTU->Master@PKU) : Medical MultiModal Leanrning (Ultrasound Video + Clinical Report)
 		<br>
@@ -440,7 +439,8 @@ Autoregressive Traction for Survival Prediction</b><br>
 		<br><br>
 	&Delta;	<b>Jiashu Xu</b> (B.E.@HIT-SZ-> Mphil@HKUST-GZ) : Medical MultiModal Leanrning (RL MLLM for Medical)
 		<br>
-		&nbsp&nbsp&nbsp&nbsp--Ongoing<br><br>
+		&nbsp&nbsp&nbsp&nbsp--Production: TMI (under review)
+		<br><br>
 
 	&Delta;	<b>Jinshan Liu</b> (B.E.@XJTU) : Agentic Image Restoration
 		<br>
